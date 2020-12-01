@@ -40,7 +40,8 @@ const App = () => {
     700: 2,
     500: 1
   }
-
+  
+  // Iterating through color object from colorConstants file
   const colorItems = !query && Object.keys(colorObj).map(color => {
   return <p className={classes.colorBox} id={colorObj[color]} style={{backgroundColor: colorObj[color], color: colorObj[color] === '#000000' ? '#fff' : '#000'}}>{color}</p>
   });
